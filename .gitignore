@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+*.vcxproj
+*.filters
+Source/Thirdparty/ImGui/Binaries
+Source/Thirdparty/ImGui/Intermediate
+Binaries/
+*.sln
+.vscode/*

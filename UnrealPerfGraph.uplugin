@@ -1,0 +1,25 @@
+{
+  "FileVersion": 1,
+  "Version": 1,
+  "VersionName": "0.1",
+  "FriendlyName": "UnrealPerfGraph",
+  "Description": "In-game / In-Engine Performance graph",
+  "Category": "Performance",
+  "CreatedBy": "quentinwarnant",
+  "CreatedByURL": "https://quentinwarnant.github.io",
+  "DocsURL": "https://github.com/quentinwarnant/UnrealPerfGraph/blob/main/README.md",
+  "SupportURL": "https://github.com/quentinwarnant/UnrealPerfGraph/issues",
+  "MarketplaceURL": "https://github.com/quentinwarnant/UnrealPerfGraph",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "IsExperimentalVersion": true,
+  "Installed": true,
+  "EnabledByDefault": false,
+  "Modules": [
+    {
+      "Name": "UnrealPerfGraph",
+      "Type": "Runtime",
+      "LoadingPhase": "PostDefault"
+    }
+  ]
+}
