@@ -38,3 +38,4 @@ Source/Thirdparty/ImGui/Intermediate
 Binaries/
 *.sln
 .vscode/*
+Intermediate/

@@ -16,6 +16,8 @@ public:
 	virtual void StartupModule() override;
 	virtual void ShutdownModule() override;
 
+	void OnReadyToStartPerfGraphThread(UWorld* World);
+
 private:
 	TSharedPtr<FUnrealPerfGraphThread> PerfGraphThread;
 };

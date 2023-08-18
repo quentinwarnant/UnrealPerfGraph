@@ -4,15 +4,16 @@
 #include "Misc/SingleThreadRunnable.h"
 #include "imgui.h"
 
-class UNREALPERFGRAPH_API FUnrealPerfGraphThread : public FRunnable, FSingleThreadRunnable
+
+class UNREALPERFGRAPH_API FUnrealPerfGraphThread : public FRunnable// , FSingleThreadRunnable
 {
 public:  
   FUnrealPerfGraphThread();
   virtual ~FUnrealPerfGraphThread();
 
-  void Wait(float Seconds);
-  virtual FSingleThreadRunnable* GetSingleThreadInterface() override { return this; }
-  virtual void Tick() override;
+  //void Wait(float Seconds);
+  //virtual FSingleThreadRunnable* GetSingleThreadInterface() override { return this; }
+  //virtual void Tick() override;
 
   virtual bool Init() override;
   virtual uint32 Run() override;
@@ -24,4 +25,11 @@ public:
 //   bool IsThreadVerifiedSuspended();
 //   bool HasThreadStopped();
 
+  void Tick(float DeltaTime);
+
+  void SetWorld(UWorld* InWorld);
+
+private:
+	FDelegateHandle OnGameViewportTickDelegate;
+	UWorld* World;
 };
